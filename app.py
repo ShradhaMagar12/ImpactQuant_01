@@ -844,36 +844,67 @@ def compute_normality_test(df: pd.DataFrame) -> dict:
 def compute_hypothesis_test(df: pd.DataFrame) -> dict:
     high = df[df["Impact"] == "High"]["Change (%)"].dropna()
     others = df[df["Impact"] != "High"]["Change (%)"].dropna()
+
+    alpha = 0.05  # significance level
+
     if len(high) < 2 or len(others) < 2:
         return {
+            "test_type": "Independent Two-Sample T-Test",
+            "null_hypothesis": "H0: μ1 = μ2 (No difference in mean stock price change)",
+            "alternative_hypothesis": "H1: μ1 ≠ μ2 (Significant difference exists)",
+            "significance_level": alpha,
+
             "high_samples": int(len(high)),
             "other_samples": int(len(others)),
+
             "high_mean": round(float(high.mean()), 2) if len(high) else None,
             "other_mean": round(float(others.mean()), 2) if len(others) else None,
+
+            "high_std": round(float(high.std()), 2) if len(high) else None,
+            "other_std": round(float(others.std()), 2) if len(others) else None,
+
             "t_statistic": None,
             "p_value": None,
+
+            "formula": "t = (x̄1 - x̄2) / sqrt((s1²/n1) + (s2²/n2))",
+
             "decision": "Insufficient data",
             "interpretation": "Need at least two samples in each group to run the t-test.",
         }
 
+    # Perform Welch’s t-test
     t_stat, p_val = stats.ttest_ind(high, others, equal_var=False)
-    significant = p_val < 0.05
+
+    significant = p_val < alpha
+
     return {
+        "test_type": "Independent Two-Sample T-Test (Welch’s)",
+        "null_hypothesis": "H0: μ1 = μ2 (No difference in mean stock price change)",
+        "alternative_hypothesis": "H1: μ1 ≠ μ2 (Significant difference exists)",
+        "significance_level": alpha,
+
         "high_samples": int(len(high)),
         "other_samples": int(len(others)),
+
         "high_mean": round(float(high.mean()), 2),
         "other_mean": round(float(others.mean()), 2),
+
+        "high_std": round(float(high.std()), 2),
+        "other_std": round(float(others.std()), 2),
+
         "t_statistic": round(float(t_stat), 4),
         "p_value": round(float(p_val), 4),
+
+        "formula": "t = (x̄1 - x̄2) / sqrt((s1²/n1) + (s2²/n2))",
+
         "decision": "Reject H0" if significant else "Fail to Reject H0",
+
         "interpretation": (
-            "High-impact disasters affect stock-price change differently from other events."
+            "High-impact disasters significantly affect stock-price change."
             if significant
-            else "The filtered sample does not show a statistically significant difference."
+            else "No statistically significant difference observed."
         ),
     }
-
-
 def build_hypothesis_comparison_chart(hypothesis: dict) -> go.Figure:
     if hypothesis["high_mean"] is None or hypothesis["other_mean"] is None:
         return empty_figure("Hypothesis Comparison", "Not enough samples to compare high-impact events with other events.")

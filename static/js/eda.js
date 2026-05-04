@@ -47,32 +47,55 @@ window.addEventListener("load", async () => {
         <p>${ImpactQuant.escapeHtml(normality.conclusion)}</p>
       </div>
     `;
-
-    const hypothesis = edaPayload.hypothesis_test;
+    const hypothesis = edaPayload?.hypothesis_test ?? {};
     ImpactQuant.$("eda-hypothesis").innerHTML = `
       <div class="stack-item">
-        <h4>Objective</h4>
-        <p>Check whether high-impact disasters affect stock-price change differently from other events.</p>
+        <h4> Objective</h4>
+        <p>To analyze whether <b>high-impact disasters</b> significantly affect stock price changes.</p>
       </div>
+
       <div class="stack-item">
-        <h4>Samples</h4>
-        <p>High impact: ${hypothesis.high_samples} | Others: ${hypothesis.other_samples}</p>
+        <h4> Hypotheses</h4>
+        <p><b>H₀:</b> ${hypothesis.null_hypothesis ?? "μ₁ = μ₂ (No difference in means)"}</p>
+        <p><b>H₁:</b> ${hypothesis.alternative_hypothesis ?? "μ₁ ≠ μ₂ (Significant difference exists)"}</p>
       </div>
+
       <div class="stack-item">
-        <h4>Means</h4>
-        <p>High impact mean: ${hypothesis.high_mean ?? "N/A"}% | Others: ${hypothesis.other_mean ?? "N/A"}%</p>
+        <h4> Test Details</h4>
+        <p><b>Test:</b> ${hypothesis.test_type ?? "Independent Two-Sample T-Test (Welch’s)"}</p>
+        <p><b>Significance Level (α):</b> ${hypothesis.significance_level ?? 0.05}</p>
       </div>
+
       <div class="stack-item">
-        <h4>T-Test</h4>
-        <p>T-statistic: ${hypothesis.t_statistic ?? "N/A"} | P-value: ${hypothesis.p_value ?? "N/A"}</p>
+        <h4> Sample Summary</h4>
+        <p><b>High Impact Samples:</b> ${hypothesis.high_samples ?? "N/A"}</p>
+        <p><b>Other Samples:</b> ${hypothesis.other_samples ?? "N/A"}</p>
+        <p><b>Mean (High Impact):</b> ${hypothesis.high_mean ?? "N/A"}%</p>
+        <p><b>Mean (Others):</b> ${hypothesis.other_mean ?? "N/A"}%</p>
       </div>
+
       <div class="stack-item">
-        <h4>Decision</h4>
-        <p>${ImpactQuant.escapeHtml(hypothesis.decision)}</p>
-        <div class="severity-pill ${hypothesis.decision === "Reject H0" ? "severity-high" : "severity-low"}">${ImpactQuant.escapeHtml(hypothesis.interpretation)}</div>
+        <h4> Test Results</h4>
+        <p><b>T-Statistic:</b> ${hypothesis.t_statistic ?? "N/A"}</p>
+        <p><b>P-Value:</b> ${hypothesis.p_value ?? "N/A"}</p>
+      </div>
+
+      <div class="stack-item">
+        <h4> Decision & Justification</h4>
+        ${
+          hypothesis.p_value !== undefined && hypothesis.p_value < 0.05
+            ? `<p style="color: green;"><b>Reject H₀</b><br>
+              Since p-value (${hypothesis.p_value}) < α (0.05), there is a statistically significant difference.</p>`
+            : `<p style="color: orange;"><b>Fail to Reject H₀</b><br>
+              Since p-value (${hypothesis.p_value ?? "N/A"}) ≥ α (0.05), no statistically significant difference is observed.</p>`
+        }
+      </div>
+
+      <div class="stack-item">
+        <h4> Interpretation</h4>
+        <p>${hypothesis.interpretation ?? "No interpretation available."}</p>
       </div>
     `;
-
     ImpactQuant.setFilterMeta(
       `${dataPayload.summary.records} rows analysed - ${dataPayload.summary.sectors} sectors - ${dataPayload.summary.date_range.start || "N/A"} to ${dataPayload.summary.date_range.end || "N/A"}`,
     );
