@@ -243,7 +243,7 @@ def parse_filters() -> dict:
     return {
         "company": pick("company", default="All"),
         "sector": pick("sector", default="All"),
-        "disaster_category": pick("disaster_category", "disasterType", default="Both"),
+        "disaster_category": "Natural",
         "event_type": pick("event_type", "type", default="All"),
         "location": pick("location", default="All"),
         "start_date": pick("start_date", "date_from", default=""),
@@ -1190,7 +1190,7 @@ def get_filter_options(df: pd.DataFrame) -> dict:
         "companies": ["All"] + sorted(df["Company"].unique().tolist()),
         "sectors": ["All"] + sorted(df["Sector"].unique().tolist()),
         "locations": ["All"] + sorted(df["Location"].unique().tolist()),
-        "disaster_categories": ["Both", "Natural", "Man-made"],
+        "disaster_categories": ["Natural"],
         "event_types": ["All"] + sorted(df["Type"].unique().tolist()),
         "date_range": {
             "start": format_date(df["Disaster_Date"].min()),
