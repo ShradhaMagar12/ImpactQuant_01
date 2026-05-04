@@ -49,23 +49,6 @@ window.addEventListener("load", async () => {
     ImpactQuant.renderRipple("dashboard-ripple", insightsPayload.ripple_effects);
     ImpactQuant.$("dashboard-insight-count").textContent = `${insightsPayload.insights.length}`;
 
-    const powerBi = analysisPayload.power_bi;
-    const meta = ImpactQuant.$("powerbi-meta");
-    meta.innerHTML = Object.entries(powerBi.selected_filters || {})
-      .map(([label, value]) => `<div class="pill">${ImpactQuant.escapeHtml(label)}: ${ImpactQuant.escapeHtml(value || "All")}</div>`)
-      .join("");
-    const frame = ImpactQuant.$("powerbi-frame");
-    const empty = ImpactQuant.$("powerbi-empty");
-    if (powerBi.enabled && powerBi.embed_url) {
-      frame.src = powerBi.embed_url;
-      frame.classList.add("active");
-      empty.style.display = "none";
-    } else {
-      frame.classList.remove("active");
-      frame.removeAttribute("src");
-      empty.style.display = "grid";
-    }
-
     ImpactQuant.renderTable("dashboard-table", dataPayload.rows.slice(0, 12));
     ImpactQuant.$("dashboard-table-count").textContent = `${dataPayload.summary.records} rows`;
     ImpactQuant.setFilterMeta(
