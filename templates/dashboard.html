@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-section">
+  <div class="section-head">
+    <div class="eyebrow">Dashboard</div>
+    <h1 class="section-title">Market Impact Overview</h1>
+    <p class="section-sub">This page focuses on the high-level story: KPI movement, top disaster impacts, sector behavior, geography, and executive insights.</p>
+  </div>
+
+  <div class="kpi-grid">
+    <div class="kpi-card"><span class="kpi-label">Avg Change (%)</span><span class="kpi-value" id="dash-avg-change">0.00%</span></div>
+    <div class="kpi-card"><span class="kpi-label">Max Drop</span><span class="kpi-value" id="dash-max-drop">0.00%</span></div>
+    <div class="kpi-card"><span class="kpi-label">Recovery Days</span><span class="kpi-value" id="dash-recovery">0.0</span></div>
+    <div class="kpi-card"><span class="kpi-label">Volatility</span><span class="kpi-value" id="dash-volatility">0.00</span></div>
+    <div class="kpi-card"><span class="kpi-label">Impact Score</span><span class="kpi-value" id="dash-impact-score">0.00</span></div>
+    <div class="kpi-card"><span class="kpi-label">Resilience Score</span><span class="kpi-value" id="dash-resilience-score">0.00</span></div>
+  </div>
+
+  <div class="plot-grid two">
+    <div class="insight-card">
+      <div class="card-head"><h3>Executive Snapshot</h3><span>Summary</span></div>
+      <div id="dashboard-summary" class="stack-list"></div>
+    </div>
+    <div class="plot-card">
+      <div class="card-head"><h3>Sector Leaderboard</h3><span>Table</span></div>
+      <div class="table-wrap">
+        <table class="data-table" id="dashboard-sector-table">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="plot-grid two">
+    <div class="plot-card"><div class="card-head"><h3>Stock Trend</h3><span>Line</span></div><div id="dashboard-line" class="plot-box"></div></div>
+    <div class="plot-card"><div class="card-head"><h3>Impact per Disaster</h3><span>Bar</span></div><div id="dashboard-bar" class="plot-box"></div></div>
+  </div>
+
+  <div class="plot-grid two">
+    <div class="plot-card"><div class="card-head"><h3>Sector Comparison</h3><span>Sector</span></div><div id="dashboard-sector" class="plot-box"></div></div>
+    <div class="plot-card"><div class="card-head"><h3>Disaster Frequency Timeline</h3><span>Timeline</span></div><div id="dashboard-frequency" class="plot-box"></div></div>
+  </div>
+
+  <div class="plot-grid two">
+    <div class="plot-card"><div class="card-head"><h3>Location Impact Snapshot</h3><span>Scatter</span></div><div id="dashboard-location" class="plot-box"></div></div>
+    <div class="insight-card">
+      <div class="card-head"><h3>Auto Insights</h3><span id="dashboard-insight-count">0</span></div>
+      <div id="dashboard-insights" class="stack-list"></div>
+    </div>
+  </div>
+
+  <div class="plot-grid two">
+    <div class="insight-card">
+      <div class="card-head"><h3>Ripple Effect Map</h3><span>Chain</span></div>
+      <div id="dashboard-ripple" class="stack-list"></div>
+    </div>
+    <div class="plot-card">
+      <div class="card-head"><h3>Power BI Embed</h3><span>Iframe</span></div>
+      <div id="powerbi-meta" class="pill-grid"></div>
+      <div id="powerbi-empty" class="empty-state">Set <code>POWER_BI_EMBED_URL</code> to a publish-to-web Power BI report to activate this panel.</div>
+      <iframe id="powerbi-frame" title="Power BI Dashboard" loading="lazy"></iframe>
+    </div>
+  </div>
+
+  <div class="plot-card">
+    <div class="card-head"><h3>Filtered Dataset Preview</h3><span id="dashboard-table-count">0 rows</span></div>
+    <div class="table-wrap">
+      <table class="data-table" id="dashboard-table">
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+{% endblock %}

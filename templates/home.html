@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero-shell">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">ImpactQuant Experience</div>
+      <h1 class="hero-title">Disasters x Markets<br>ImpactQuant Intelligence</h1>
+      <p class="hero-sub">
+        Explore how disasters influence markets through a clean analytics experience with separate spaces for
+        overview dashboards, exploratory data analysis, model diagnostics, and future-impact forecasting.
+      </p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="{{ url_for('dashboard_page') }}">Open Dashboard</a>
+        <a class="btn-ghost" href="{{ url_for('prediction_page') }}">Future Prediction</a>
+      </div>
+    </div>
+    <div class="hero-panel">
+      <div class="kpi-grid hero-kpis">
+        <div class="kpi-card"><span class="kpi-label">Disasters</span><span class="kpi-value" id="home-disasters">0</span></div>
+        <div class="kpi-card"><span class="kpi-label">Companies</span><span class="kpi-value" id="home-companies">0</span></div>
+        <div class="kpi-card"><span class="kpi-label">Sectors</span><span class="kpi-value" id="home-sectors">0</span></div>
+        <div class="kpi-card"><span class="kpi-label">Avg Change</span><span class="kpi-value" id="home-change">0%</span></div>
+      </div>
+      <div class="hero-note">
+        <div class="hero-note-title">Designed for Analysis, Not Clutter</div>
+        <p>The landing page stays focused on navigation and storytelling, while the deeper technical content lives inside the dedicated pages.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-block">
+  <div class="section-head">
+    <div class="eyebrow">Navigation Map</div>
+    <h2 class="section-title">Choose the Analysis Space You Need</h2>
+  </div>
+  <div class="nav-card-grid">
+    <a class="nav-card" href="{{ url_for('dashboard_page') }}">
+      <div class="nav-card-tag">Dashboard</div>
+      <h3>Impact Overview</h3>
+      <p>KPIs, stock trend, disaster impact, sector comparison, location view, insights, and Power BI embed.</p>
+    </a>
+    <a class="nav-card" href="{{ url_for('eda_page') }}">
+      <div class="nav-card-tag">EDA</div>
+      <h3>Exploratory Analysis</h3>
+      <p>Distribution charts, sector risk matrix, disaster mix, year-vs-type heatmap, and dataset statistics.</p>
+    </a>
+    <a class="nav-card" href="{{ url_for('model_page') }}">
+      <div class="nav-card-tag">Model</div>
+      <h3>ML Diagnostics</h3>
+      <p>Random Forest accuracy, confusion matrix, actual-vs-predicted view, residuals, and feature importance.</p>
+    </a>
+    <a class="nav-card" href="{{ url_for('prediction_page') }}">
+      <div class="nav-card-tag">Future Prediction</div>
+      <h3>Scenario Forecasting</h3>
+      <p>Enter a future disaster setup and estimate impact level, change percentage, price shift, and recovery days.</p>
+    </a>
+  </div>
+</section>
+
+<section class="section-block">
+  <div class="section-head">
+    <div class="eyebrow">What You Can Explore</div>
+    <h2 class="section-title">A Cleaner Entry Into the Project</h2>
+  </div>
+  <div class="feature-grid">
+    <div class="feature-card"><h3>Executive Story</h3><p>Start in the dashboard for high-level KPIs, sector movement, event impact, and quick decision support.</p></div>
+    <div class="feature-card"><h3>EDA Flow</h3><p>Move into univariate, bivariate, multivariate, outlier, and hypothesis-testing views built from the original EDA content.</p></div>
+    <div class="feature-card"><h3>Model Evaluation</h3><p>Inspect classifier and regressor behavior separately with confusion matrices, residuals, and feature drivers.</p></div>
+    <div class="feature-card"><h3>Future Scenario Lab</h3><p>Use the forecasting page for what-if analysis on future disasters without mixing it into the EDA layout.</p></div>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/home.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-section">
+  <div class="section-head">
+    <div class="eyebrow">About ImpactQuant</div>
+    <h1 class="section-title">Disaster Impact Analysis for Stocks, Sectors, and Recovery Patterns</h1>
+    <p class="section-sub">
+      The app uses the provided optimized CSV dataset, computes richer derived fields, and layers data science,
+      visualization, and machine learning into separate route-based experiences.
+    </p>
+  </div>
+
+  <div class="timeline-grid">
+    <div class="timeline-card"><span>01</span><h3>Data Enrichment</h3><p>Year, disaster category, sector profiles, location views, impact score, resilience score, and recovery-day estimation.</p></div>
+    <div class="timeline-card"><span>02</span><h3>Filtering Layer</h3><p>The same filters apply across Dashboard, EDA, Model, and Future Prediction pages for consistent exploration.</p></div>
+    <div class="timeline-card"><span>03</span><h3>EDA Layer</h3><p>Distribution, mix, heatmap, bubble, and scatter plots reveal where volatility and resilience live.</p></div>
+    <div class="timeline-card"><span>04</span><h3>ML Layer</h3><p>Random Forest classifier predicts impact level, while the regressor predicts change percentage for new scenarios.</p></div>
+  </div>
+
+  <div class="plot-grid two">
+    <div class="feature-card">
+      <h3>Project Objective</h3>
+      <p>Measure how disasters affect stock prices, identify vulnerable sectors, highlight resilient industries, and provide future-facing scenario prediction.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Methodology</h3>
+      <p>Use descriptive statistics, correlation analysis, outlier detection, sector-level scoring, and machine learning to move from raw events to usable insight.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

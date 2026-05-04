@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-section">
+  <div class="section-head">
+    <div class="eyebrow">Model</div>
+    <h1 class="section-title">Machine Learning Diagnostics</h1>
+    <p class="section-sub">This page separates the ML evaluation layer from the dashboard so you can focus on model quality and explainability.</p>
+  </div>
+
+  <div class="kpi-grid compact">
+    <div class="kpi-card"><span class="kpi-label">Classifier Accuracy</span><span class="kpi-value" id="model-accuracy">0%</span></div>
+    <div class="kpi-card"><span class="kpi-label">Regression RMSE</span><span class="kpi-value" id="model-rmse">0</span></div>
+    <div class="kpi-card"><span class="kpi-label">Regression MAE</span><span class="kpi-value" id="model-mae">0</span></div>
+    <div class="kpi-card"><span class="kpi-label">Regression R²</span><span class="kpi-value" id="model-r2">0</span></div>
+  </div>
+
+  <div class="plot-grid two">
+    <div class="plot-card"><div class="card-head"><h3>Confusion Matrix</h3><span>Classifier</span></div><div id="model-confusion" class="plot-box"></div></div>
+    <div class="plot-card"><div class="card-head"><h3>Impact Class Balance</h3><span>Filtered Data</span></div><div id="model-class-balance" class="plot-box"></div></div>
+  </div>
+
+  <div class="plot-grid two">
+    <div class="plot-card"><div class="card-head"><h3>Classifier Feature Importance</h3><span>RF</span></div><div id="model-classifier-importance" class="plot-box"></div></div>
+    <div class="plot-card"><div class="card-head"><h3>Regressor Feature Importance</h3><span>RF</span></div><div id="model-regressor-importance" class="plot-box"></div></div>
+  </div>
+
+  <div class="plot-grid two">
+    <div class="plot-card"><div class="card-head"><h3>Actual vs Predicted</h3><span>Regression</span></div><div id="model-actual-predicted" class="plot-box"></div></div>
+    <div class="plot-card"><div class="card-head"><h3>Residual Distribution</h3><span>Residuals</span></div><div id="model-residuals" class="plot-box"></div></div>
+  </div>
+
+  <div class="plot-grid two">
+    <div class="plot-card">
+      <div class="card-head"><h3>Top Classifier Drivers</h3><span>Table</span></div>
+      <div class="table-wrap">
+        <table class="data-table" id="model-classifier-table">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="plot-card">
+      <div class="card-head"><h3>Top Regressor Drivers</h3><span>Table</span></div>
+      <div class="table-wrap">
+        <table class="data-table" id="model-regressor-table">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/model.js') }}"></script>
+{% endblock %}

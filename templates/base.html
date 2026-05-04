@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ImpactQuant | {{ page_title }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="page-{{ page_name }}">
+  <div id="loader">
+    <div class="ld-hex">IQ</div>
+    <div class="ld-bar"><div class="ld-fill"></div></div>
+    <div class="ld-lbl">BOOTING IMPACTQUANT</div>
+  </div>
+
+  <nav id="navbar">
+    <a class="nb-brand" href="{{ url_for('home_page') }}">
+      <div class="nb-ico">IQ</div>
+      <div class="nb-wm">IMPACT<span>QUANT</span></div>
+    </a>
+    <ul class="nb-links">
+      <li><a href="{{ url_for('home_page') }}" class="{% if page_name == 'home' %}active{% endif %}" data-nav-target="home">Home</a></li>
+      <li><a href="{{ url_for('about_page') }}" class="{% if page_name == 'about' %}active{% endif %}" data-nav-target="about">About</a></li>
+      <li><a href="{{ url_for('dashboard_page') }}" class="{% if page_name == 'dashboard' %}active{% endif %}" data-nav-target="dashboard">Dashboard</a></li>
+      <li><a href="{{ url_for('eda_page') }}" class="{% if page_name == 'eda' %}active{% endif %}" data-nav-target="eda">EDA</a></li>
+      <li><a href="{{ url_for('model_page') }}" class="{% if page_name == 'model' %}active{% endif %}" data-nav-target="model">Model</a></li>
+      <li><a href="{{ url_for('prediction_page') }}" class="{% if page_name == 'prediction' %}active{% endif %}" data-nav-target="prediction">Future Prediction</a></li>
+    </ul>
+    <a href="{{ url_for('dashboard_page') }}" class="nb-cta" data-nav-target="dashboard">OPEN ANALYTICS</a>
+  </nav>
+
+  {% if show_filters %}
+  <section class="filter-shell">
+    <div class="filter-panel">
+      <div class="filter-header">
+        <div>
+          <div class="eyebrow">Global Filters</div>
+          <h2 class="filter-title">Apply the Same Filters Across Dashboard, EDA, Model, and Prediction</h2>
+        </div>
+        <div class="filter-status" id="status-msg">READY</div>
+      </div>
+      <div class="filter-grid">
+        <div class="ip-field">
+          <div class="ip-label">Company</div>
+          <select id="filter-company" class="ip-sel"></select>
+        </div>
+        <div class="ip-field">
+          <div class="ip-label">Sector</div>
+          <select id="filter-sector" class="ip-sel"></select>
+        </div>
+        <div class="ip-field">
+          <div class="ip-label">Disaster Category</div>
+          <select id="filter-category" class="ip-sel"></select>
+        </div>
+        <div class="ip-field">
+          <div class="ip-label">Event Type</div>
+          <select id="filter-type" class="ip-sel"></select>
+        </div>
+        <div class="ip-field">
+          <div class="ip-label">Location</div>
+          <select id="filter-location" class="ip-sel"></select>
+        </div>
+        <div class="ip-field">
+          <div class="ip-label">Event Label</div>
+          <input id="filter-event" class="ip-txt" type="text" placeholder="Search disaster name">
+        </div>
+        <div class="ip-field">
+          <div class="ip-label">Start Date</div>
+          <input id="filter-start" class="ip-date" type="date">
+        </div>
+        <div class="ip-field">
+          <div class="ip-label">End Date</div>
+          <input id="filter-end" class="ip-date" type="date">
+        </div>
+      </div>
+      <div class="filter-actions">
+        <button class="btn-primary" id="apply-filters-btn">Apply Filters</button>
+        <button class="btn-ghost" id="reset-filters-btn">Reset</button>
+        <div class="filter-meta" id="filter-meta">Loading filters...</div>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <main class="page-main {% if show_filters %}with-filters{% endif %}">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    <div class="ft-brand">IMPACTQUANT</div>
+    <div class="ft-copy">Flask + Plotly + Scikit-learn full-stack application for disaster-driven stock market analysis.</div>
+  </footer>
+
+  <script>
+    window.IMPACTQUANT_CONFIG = {{ frontend_config|tojson }};
+    window.IMPACTQUANT_PAGE = "{{ page_name }}";
+  </script>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <script src="{{ url_for('static', filename='js/common.js') }}"></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

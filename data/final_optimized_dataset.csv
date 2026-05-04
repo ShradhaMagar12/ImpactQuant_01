@@ -1,0 +1,332 @@
+Company,Sector,Disaster,Type,Location,Disaster_Date,Before_Price,After_Price,Change (%),Impact
+Adani Ports,Infrastructure,Cyclone Nargis,cyclone,Myanmar,2008-04-27,120.59,138.84,15.13,Low
+Adani Ports,Infrastructure,2009 Sumatra earthquakes,earthquake,Indonesia,2009-09-30,96.69,94.19,-2.59,Medium
+Adani Ports,Infrastructure,2010 Haiti earthquake,earthquake,Haiti,2010-01-12,109.29,118.75,8.66,Low
+Adani Ports,Infrastructure,2011 Thoku earthquake and tsunami,earthquake + tsunami,Japan,2011-03-11,121.45,121.31,-0.12,Low
+Adani Ports,Infrastructure,Typhoon Bopha,cyclone,Philippines,2012-12-04,117.18,128.52,9.68,Low
+Adani Ports,Infrastructure,Typhoon Haiyan,cyclone,"Philippines, Vietnam, China",2013-11-08,142.86,136.65,-4.35,Medium
+Adani Ports,Infrastructure,2014 Badakhshan mudslides,landslide,Afghanistan,2014-05-02,180.77,178.28,-1.38,Low
+Adani Ports,Infrastructure,April 2015 Nepal earthquake,earthquake,"Nepal, India",2015-04-25,296.06,299.88,1.29,Low
+Adani Ports,Infrastructure,Hurricane Maria,cyclone,"Puerto Rico, Dominica",2017-09-19,384.88,383.06,-0.47,Low
+Adani Ports,Infrastructure,2018 Sulawesi earthquake and tsunami,earthquake + tsunami,Indonesia,2018-09-28,331.88,316.43,-4.66,Medium
+Adani Ports,Infrastructure,2021 Haiti earthquake,earthquake,Haiti,2021-08-14,684.16,689.54,0.79,Low
+Adani Ports,Infrastructure,2022 European heatwaves,heatwave,Europe,2022-06-12,718.04,653.91,-8.93,High
+Adani Ports,Infrastructure,2023 TurkeySyria earthquakes,earthquake,"Turkey, Syria",2023-02-06,487.37,574.78,17.94,Low
+Airtel,Telecom,2004 Indian Ocean earthquake and tsunami,earthquake + tsunami,"Indonesia, Sri Lanka, India, Thailand, Maldives, Somalia",2004-12-26,82.45,89.62,8.7,Low
+Airtel,Telecom,2005 Kashmir earthquake,earthquake,"India, Pakistan",2005-10-08,143.69,142.0,-1.18,Low
+Airtel,Telecom,2006 Yogyakarta earthquake,earthquake,Indonesia,2006-05-26,149.54,151.86,1.55,Low
+Airtel,Telecom,Cyclone Sidr,cyclone,"Bangladesh, India",2007-11-11,380.13,378.17,-0.52,Low
+Airtel,Telecom,Cyclone Nargis,cyclone,Myanmar,2008-04-27,354.58,372.91,5.17,Low
+Airtel,Telecom,2009 Sumatra earthquakes,earthquake,Indonesia,2009-09-30,344.28,332.4,-3.45,Medium
+Airtel,Telecom,2010 Haiti earthquake,earthquake,Haiti,2010-01-12,273.56,263.6,-3.64,Medium
+Airtel,Telecom,2011 Thoku earthquake and tsunami,earthquake + tsunami,Japan,2011-03-11,270.31,266.98,-1.23,Low
+Airtel,Telecom,Typhoon Bopha,cyclone,Philippines,2012-12-04,276.98,270.36,-2.39,Medium
+Airtel,Telecom,Typhoon Haiyan,cyclone,"Philippines, Vietnam, China",2013-11-08,302.48,279.68,-7.54,High
+Airtel,Telecom,2014 Badakhshan mudslides,landslide,Afghanistan,2014-05-02,284.01,261.6,-7.89,High
+Airtel,Telecom,April 2015 Nepal earthquake,earthquake,"Nepal, India",2015-04-25,341.52,323.52,-5.27,High
+Airtel,Telecom,Hurricane Maria,cyclone,"Puerto Rico, Dominica",2017-09-19,342.74,339.69,-0.89,Low
+Airtel,Telecom,2018 Sulawesi earthquake and tsunami,earthquake + tsunami,Indonesia,2018-09-28,310.05,277.19,-10.6,High
+Airtel,Telecom,2021 Haiti earthquake,earthquake,Haiti,2021-08-14,574.89,597.63,3.96,Low
+Airtel,Telecom,2022 European heatwaves,heatwave,Europe,2022-06-12,669.78,629.08,-6.08,High
+Airtel,Telecom,2023 TurkeySyria earthquakes,earthquake,"Turkey, Syria",2023-02-06,755.03,757.83,0.37,Low
+Coal India,Mining,2011 Thoku earthquake and tsunami,earthquake + tsunami,Japan,2011-03-11,114.68,115.65,0.85,Low
+Coal India,Mining,Typhoon Bopha,cyclone,Philippines,2012-12-04,128.2,125.79,-1.88,Low
+Coal India,Mining,Typhoon Haiyan,cyclone,"Philippines, Vietnam, China",2013-11-08,107.57,103.46,-3.82,Medium
+Coal India,Mining,2014 Badakhshan mudslides,landslide,Afghanistan,2014-05-02,118.68,118.56,-0.1,Low
+Coal India,Mining,April 2015 Nepal earthquake,earthquake,"Nepal, India",2015-04-25,157.59,153.65,-2.5,Medium
+Coal India,Mining,Hurricane Maria,cyclone,"Puerto Rico, Dominica",2017-09-19,125.64,125.02,-0.49,Low
+Coal India,Mining,2018 Sulawesi earthquake and tsunami,earthquake + tsunami,Indonesia,2018-09-28,146.68,144.39,-1.56,Low
+Coal India,Mining,2021 Haiti earthquake,earthquake,Haiti,2021-08-14,94.52,91.28,-3.43,Medium
+Coal India,Mining,2022 European heatwaves,heatwave,Europe,2022-06-12,145.92,134.92,-7.54,High
+Coal India,Mining,2023 TurkeySyria earthquakes,earthquake,"Turkey, Syria",2023-02-06,175.91,172.75,-1.8,Low
+Dr Reddy,Pharma,2001 Gujarat earthquake,earthquake,India,2001-01-26,59.01,55.96,-5.17,High
+Dr Reddy,Pharma,2002 Hindu Kush earthquakes,earthquake,Afghanistan,2002-03-25,91.14,93.86,2.98,Low
+Dr Reddy,Pharma,2004 Indian Ocean earthquake and tsunami,earthquake + tsunami,"Indonesia, Sri Lanka, India, Thailand, Maldives, Somalia",2004-12-26,74.93,75.3,0.49,Low
+Dr Reddy,Pharma,2005 Kashmir earthquake,earthquake,"India, Pakistan",2005-10-08,77.23,78.81,2.05,Low
+Dr Reddy,Pharma,2006 Yogyakarta earthquake,earthquake,Indonesia,2006-05-26,125.96,118.85,-5.64,High
+Dr Reddy,Pharma,Cyclone Sidr,cyclone,"Bangladesh, India",2007-11-11,108.46,109.59,1.04,Low
+Dr Reddy,Pharma,Cyclone Nargis,cyclone,Myanmar,2008-04-27,108.39,112.47,3.76,Low
+Dr Reddy,Pharma,2009 Sumatra earthquakes,earthquake,Indonesia,2009-09-30,177.01,165.03,-6.77,High
+Dr Reddy,Pharma,2010 Haiti earthquake,earthquake,Haiti,2010-01-12,213.1,220.45,3.45,Low
+Dr Reddy,Pharma,2011 Thoku earthquake and tsunami,earthquake + tsunami,Japan,2011-03-11,291.68,283.73,-2.73,Medium
+Dr Reddy,Pharma,Typhoon Bopha,cyclone,Philippines,2012-12-04,331.93,337.6,1.71,Low
+Dr Reddy,Pharma,Typhoon Haiyan,cyclone,"Philippines, Vietnam, China",2013-11-08,444.55,456.32,2.65,Low
+Dr Reddy,Pharma,2014 Badakhshan mudslides,landslide,Afghanistan,2014-05-02,494.51,506.6,2.44,Low
+Dr Reddy,Pharma,April 2015 Nepal earthquake,earthquake,"Nepal, India",2015-04-25,663.48,615.73,-7.2,High
+Dr Reddy,Pharma,Hurricane Maria,cyclone,"Puerto Rico, Dominica",2017-09-19,426.92,465.64,9.07,Low
+Dr Reddy,Pharma,2018 Sulawesi earthquake and tsunami,earthquake + tsunami,Indonesia,2018-09-28,488.07,475.77,-2.52,Medium
+Dr Reddy,Pharma,2021 Haiti earthquake,earthquake,Haiti,2021-08-14,938.17,912.58,-2.73,Medium
+Dr Reddy,Pharma,2022 European heatwaves,heatwave,Europe,2022-06-12,806.83,807.37,0.07,Low
+Dr Reddy,Pharma,2023 TurkeySyria earthquakes,earthquake,"Turkey, Syria",2023-02-06,853.05,882.09,3.4,Low
+HDFC Bank,Banking,2001 Gujarat earthquake,earthquake,India,2001-01-26,10.11,10.35,2.37,Low
+HDFC Bank,Banking,2002 Hindu Kush earthquakes,earthquake,Afghanistan,2002-03-25,9.66,9.73,0.72,Low
+HDFC Bank,Banking,2004 Indian Ocean earthquake and tsunami,earthquake + tsunami,"Indonesia, Sri Lanka, India, Thailand, Maldives, Somalia",2004-12-26,21.08,22.11,4.89,Low
+HDFC Bank,Banking,2005 Kashmir earthquake,earthquake,"India, Pakistan",2005-10-08,28.99,29.05,0.21,Low
+HDFC Bank,Banking,2006 Yogyakarta earthquake,earthquake,Indonesia,2006-05-26,33.93,32.13,-5.31,High
+HDFC Bank,Banking,Cyclone Sidr,cyclone,"Bangladesh, India",2007-11-11,74.16,73.24,-1.24,Low
+HDFC Bank,Banking,Cyclone Nargis,cyclone,Myanmar,2008-04-27,65.48,67.25,2.7,Low
+HDFC Bank,Banking,2009 Sumatra earthquakes,earthquake,Indonesia,2009-09-30,70.68,71.8,1.58,Low
+HDFC Bank,Banking,2010 Haiti earthquake,earthquake,Haiti,2010-01-12,75.26,74.44,-1.09,Low
+HDFC Bank,Banking,2011 Thoku earthquake and tsunami,earthquake + tsunami,Japan,2011-03-11,96.1,96.56,0.48,Low
+HDFC Bank,Banking,Typhoon Bopha,cyclone,Philippines,2012-12-04,157.04,155.52,-0.97,Low
+HDFC Bank,Banking,Typhoon Haiyan,cyclone,"Philippines, Vietnam, China",2013-11-08,153.01,143.38,-6.29,High
+HDFC Bank,Banking,2014 Badakhshan mudslides,landslide,Afghanistan,2014-05-02,164.09,161.91,-1.33,Low
+HDFC Bank,Banking,April 2015 Nepal earthquake,earthquake,"Nepal, India",2015-04-25,229.34,225.62,-1.62,Low
+HDFC Bank,Banking,Hurricane Maria,cyclone,"Puerto Rico, Dominica",2017-09-19,429.17,425.6,-0.83,Low
+HDFC Bank,Banking,2018 Sulawesi earthquake and tsunami,earthquake + tsunami,Indonesia,2018-09-28,452.17,476.93,5.48,Low
+HDFC Bank,Banking,2021 Haiti earthquake,earthquake,Haiti,2021-08-14,715.31,719.64,0.61,Low
+HDFC Bank,Banking,2022 European heatwaves,heatwave,Europe,2022-06-12,655.64,620.59,-5.35,High
+HDFC Bank,Banking,2023 TurkeySyria earthquakes,earthquake,"Turkey, Syria",2023-02-06,783.12,797.34,1.82,Low
+HUL,FMCG,2001 Gujarat earthquake,earthquake,India,2001-01-26,112.4,115.7,2.94,Low
+HUL,FMCG,2002 Hindu Kush earthquakes,earthquake,Afghanistan,2002-03-25,134.91,128.54,-4.72,Medium
+HUL,FMCG,2004 Indian Ocean earthquake and tsunami,earthquake + tsunami,"Indonesia, Sri Lanka, India, Thailand, Maldives, Somalia",2004-12-26,92.32,91.49,-0.9,Low
+HUL,FMCG,2005 Kashmir earthquake,earthquake,"India, Pakistan",2005-10-08,122.5,115.41,-5.79,High
+HUL,FMCG,2006 Yogyakarta earthquake,earthquake,Indonesia,2006-05-26,158.24,155.18,-1.93,Low
+HUL,FMCG,Cyclone Sidr,cyclone,"Bangladesh, India",2007-11-11,135.9,141.96,4.46,Low
+HUL,FMCG,Cyclone Nargis,cyclone,Myanmar,2008-04-27,170.91,178.95,4.7,Low
+HUL,FMCG,2009 Sumatra earthquakes,earthquake,Indonesia,2009-09-30,191.16,196.73,2.91,Low
+HUL,FMCG,2010 Haiti earthquake,earthquake,Haiti,2010-01-12,197.18,190.93,-3.17,Medium
+HUL,FMCG,2011 Thoku earthquake and tsunami,earthquake + tsunami,Japan,2011-03-11,214.47,206.84,-3.56,Medium
+HUL,FMCG,Typhoon Bopha,cyclone,Philippines,2012-12-04,440.11,426.06,-3.19,Medium
+HUL,FMCG,Typhoon Haiyan,cyclone,"Philippines, Vietnam, China",2013-11-08,487.65,476.85,-2.21,Medium
+HUL,FMCG,2014 Badakhshan mudslides,landslide,Afghanistan,2014-05-02,475.42,452.63,-4.79,Medium
+HUL,FMCG,April 2015 Nepal earthquake,earthquake,"Nepal, India",2015-04-25,762.57,709.89,-6.91,High
+HUL,FMCG,Hurricane Maria,cyclone,"Puerto Rico, Dominica",2017-09-19,1092.0,1084.43,-0.69,Low
+HUL,FMCG,2018 Sulawesi earthquake and tsunami,earthquake + tsunami,Indonesia,2018-09-28,1411.44,1436.64,1.79,Low
+HUL,FMCG,2021 Haiti earthquake,earthquake,Haiti,2021-08-14,2208.67,2302.73,4.26,Low
+HUL,FMCG,2022 European heatwaves,heatwave,Europe,2022-06-12,2061.1,1984.2,-3.73,Medium
+HUL,FMCG,2023 TurkeySyria earthquakes,earthquake,"Turkey, Syria",2023-02-06,2436.5,2439.57,0.13,Low
+ICICI Bank,Banking,2004 Indian Ocean earthquake and tsunami,earthquake + tsunami,"Indonesia, Sri Lanka, India, Thailand, Maldives, Somalia",2004-12-26,51.36,52.11,1.46,Low
+ICICI Bank,Banking,2005 Kashmir earthquake,earthquake,"India, Pakistan",2005-10-08,84.64,74.98,-11.41,High
+ICICI Bank,Banking,2006 Yogyakarta earthquake,earthquake,Indonesia,2006-05-26,78.9,76.67,-2.83,Medium
+ICICI Bank,Banking,Cyclone Sidr,cyclone,"Bangladesh, India",2007-11-11,182.19,179.0,-1.75,Low
+ICICI Bank,Banking,Cyclone Nargis,cyclone,Myanmar,2008-04-27,129.45,137.5,6.22,Low
+ICICI Bank,Banking,2009 Sumatra earthquakes,earthquake,Indonesia,2009-09-30,127.18,138.31,8.75,Low
+ICICI Bank,Banking,2010 Haiti earthquake,earthquake,Haiti,2010-01-12,134.37,127.71,-4.96,Medium
+ICICI Bank,Banking,2011 Thoku earthquake and tsunami,earthquake + tsunami,Japan,2011-03-11,155.39,158.05,1.71,Low
+ICICI Bank,Banking,Typhoon Bopha,cyclone,Philippines,2012-12-04,172.05,180.0,4.62,Low
+ICICI Bank,Banking,Typhoon Haiyan,cyclone,"Philippines, Vietnam, China",2013-11-08,177.24,164.12,-7.4,High
+ICICI Bank,Banking,2014 Badakhshan mudslides,landslide,Afghanistan,2014-05-02,206.26,205.48,-0.38,Low
+ICICI Bank,Banking,April 2015 Nepal earthquake,earthquake,"Nepal, India",2015-04-25,259.68,276.37,6.43,Low
+ICICI Bank,Banking,Hurricane Maria,cyclone,"Puerto Rico, Dominica",2017-09-19,282.11,266.17,-5.65,High
+ICICI Bank,Banking,2018 Sulawesi earthquake and tsunami,earthquake + tsunami,Indonesia,2018-09-28,297.89,293.02,-1.63,Low
+ICICI Bank,Banking,2021 Haiti earthquake,earthquake,Haiti,2021-08-14,681.78,667.66,-2.07,Medium
+ICICI Bank,Banking,2022 European heatwaves,heatwave,Europe,2022-06-12,713.21,666.26,-6.58,High
+ICICI Bank,Banking,2023 TurkeySyria earthquakes,earthquake,"Turkey, Syria",2023-02-06,827.46,833.22,0.7,Low
+IOC,Oil & Gas,2001 Gujarat earthquake,earthquake,India,2001-01-26,2.56,2.59,1.17,Low
+IOC,Oil & Gas,2002 Hindu Kush earthquakes,earthquake,Afghanistan,2002-03-25,3.4,3.49,2.65,Low
+IOC,Oil & Gas,2004 Indian Ocean earthquake and tsunami,earthquake + tsunami,"Indonesia, Sri Lanka, India, Thailand, Maldives, Somalia",2004-12-26,16.99,16.81,-1.06,Low
+IOC,Oil & Gas,2005 Kashmir earthquake,earthquake,"India, Pakistan",2005-10-08,15.22,15.45,1.51,Low
+IOC,Oil & Gas,2006 Yogyakarta earthquake,earthquake,Indonesia,2006-05-26,15.74,15.24,-3.18,Medium
+IOC,Oil & Gas,Cyclone Sidr,cyclone,"Bangladesh, India",2007-11-11,17.51,22.27,27.18,Low
+IOC,Oil & Gas,Cyclone Nargis,cyclone,Myanmar,2008-04-27,16.14,17.3,7.19,Low
+IOC,Oil & Gas,2009 Sumatra earthquakes,earthquake,Indonesia,2009-09-30,25.23,24.87,-1.43,Low
+IOC,Oil & Gas,2010 Haiti earthquake,earthquake,Haiti,2010-01-12,22.91,23.94,4.5,Low
+IOC,Oil & Gas,2011 Thoku earthquake and tsunami,earthquake + tsunami,Japan,2011-03-11,23.37,23.65,1.2,Low
+IOC,Oil & Gas,Typhoon Bopha,cyclone,Philippines,2012-12-04,20.97,21.17,0.95,Low
+IOC,Oil & Gas,Typhoon Haiyan,cyclone,"Philippines, Vietnam, China",2013-11-08,17.83,16.31,-8.52,High
+IOC,Oil & Gas,2014 Badakhshan mudslides,landslide,Afghanistan,2014-05-02,21.86,22.64,3.57,Low
+IOC,Oil & Gas,April 2015 Nepal earthquake,earthquake,"Nepal, India",2015-04-25,30.43,30.58,0.49,Low
+IOC,Oil & Gas,Hurricane Maria,cyclone,"Puerto Rico, Dominica",2017-09-19,78.16,76.06,-2.69,Medium
+IOC,Oil & Gas,2018 Sulawesi earthquake and tsunami,earthquake + tsunami,Indonesia,2018-09-28,61.32,62.69,2.23,Low
+IOC,Oil & Gas,2021 Haiti earthquake,earthquake,Haiti,2021-08-14,52.11,53.01,1.73,Low
+IOC,Oil & Gas,2022 European heatwaves,heatwave,Europe,2022-06-12,63.28,55.78,-11.85,High
+IOC,Oil & Gas,2023 TurkeySyria earthquakes,earthquake,"Turkey, Syria",2023-02-06,66.27,66.27,0.0,Low
+ITC,FMCG,2001 Gujarat earthquake,earthquake,India,2001-01-26,10.04,10.02,-0.2,Low
+ITC,FMCG,2002 Hindu Kush earthquakes,earthquake,Afghanistan,2002-03-25,7.98,7.77,-2.63,Medium
+ITC,FMCG,2004 Indian Ocean earthquake and tsunami,earthquake + tsunami,"Indonesia, Sri Lanka, India, Thailand, Maldives, Somalia",2004-12-26,15.55,15.54,-0.06,Low
+ITC,FMCG,2005 Kashmir earthquake,earthquake,"India, Pakistan",2005-10-08,24.79,23.25,-6.21,High
+ITC,FMCG,2006 Yogyakarta earthquake,earthquake,Indonesia,2006-05-26,31.07,29.96,-3.57,Medium
+ITC,FMCG,Cyclone Sidr,cyclone,"Bangladesh, India",2007-11-11,32.65,38.54,18.04,Low
+ITC,FMCG,Cyclone Nargis,cyclone,Myanmar,2008-04-27,40.08,41.52,3.59,Low
+ITC,FMCG,2009 Sumatra earthquakes,earthquake,Indonesia,2009-09-30,46.02,46.71,1.5,Low
+ITC,FMCG,2010 Haiti earthquake,earthquake,Haiti,2010-01-12,50.12,49.49,-1.26,Low
+ITC,FMCG,2011 Thoku earthquake and tsunami,earthquake + tsunami,Japan,2011-03-11,70.13,69.54,-0.84,Low
+ITC,FMCG,Typhoon Bopha,cyclone,Philippines,2012-12-04,126.46,127.95,1.18,Low
+ITC,FMCG,Typhoon Haiyan,cyclone,"Philippines, Vietnam, China",2013-11-08,137.49,135.4,-1.52,Low
+ITC,FMCG,2014 Badakhshan mudslides,landslide,Afghanistan,2014-05-02,147.4,149.4,1.36,Low
+ITC,FMCG,April 2015 Nepal earthquake,earthquake,"Nepal, India",2015-04-25,150.14,141.55,-5.72,High
+ITC,FMCG,Hurricane Maria,cyclone,"Puerto Rico, Dominica",2017-09-19,190.44,187.95,-1.31,Low
+ITC,FMCG,2018 Sulawesi earthquake and tsunami,earthquake + tsunami,Indonesia,2018-09-28,212.75,210.78,-0.93,Low
+ITC,FMCG,2021 Haiti earthquake,earthquake,Haiti,2021-08-14,172.93,169.01,-2.27,Medium
+ITC,FMCG,2022 European heatwaves,heatwave,Europe,2022-06-12,232.39,223.4,-3.87,Medium
+ITC,FMCG,2023 TurkeySyria earthquakes,earthquake,"Turkey, Syria",2023-02-06,306.63,315.08,2.76,Low
+Infosys,IT,2001 Gujarat earthquake,earthquake,India,2001-01-26,65.32,64.9,-0.64,Low
+Infosys,IT,2002 Hindu Kush earthquakes,earthquake,Afghanistan,2002-03-25,37.47,35.98,-3.98,Medium
+Infosys,IT,2004 Indian Ocean earthquake and tsunami,earthquake + tsunami,"Indonesia, Sri Lanka, India, Thailand, Maldives, Somalia",2004-12-26,84.49,83.55,-1.11,Low
+Infosys,IT,2005 Kashmir earthquake,earthquake,"India, Pakistan",2005-10-08,102.28,105.07,2.73,Low
+Infosys,IT,2006 Yogyakarta earthquake,earthquake,Indonesia,2006-05-26,113.41,118.46,4.45,Low
+Infosys,IT,Cyclone Sidr,cyclone,"Bangladesh, India",2007-11-11,152.12,133.5,-12.24,High
+Infosys,IT,Cyclone Nargis,cyclone,Myanmar,2008-04-27,131.33,146.84,11.81,Low
+Infosys,IT,2009 Sumatra earthquakes,earthquake,Indonesia,2009-09-30,189.69,196.68,3.68,Low
+Infosys,IT,2010 Haiti earthquake,earthquake,Haiti,2010-01-12,214.73,227.55,5.97,Low
+Infosys,IT,2011 Thoku earthquake and tsunami,earthquake + tsunami,Japan,2011-03-11,263.79,262.77,-0.39,Low
+Infosys,IT,Typhoon Bopha,cyclone,Philippines,2012-12-04,219.06,207.94,-5.08,High
+Infosys,IT,Typhoon Haiyan,cyclone,"Philippines, Vietnam, China",2013-11-08,297.75,303.78,2.03,Low
+Infosys,IT,2014 Badakhshan mudslides,landslide,Afghanistan,2014-05-02,289.74,279.65,-3.48,Medium
+Infosys,IT,April 2015 Nepal earthquake,earthquake,"Nepal, India",2015-04-25,397.15,361.78,-8.91,High
+Infosys,IT,Hurricane Maria,cyclone,"Puerto Rico, Dominica",2017-09-19,353.6,355.94,0.66,Low
+Infosys,IT,2018 Sulawesi earthquake and tsunami,earthquake + tsunami,Indonesia,2018-09-28,591.28,599.72,1.43,Low
+Infosys,IT,2021 Haiti earthquake,earthquake,Haiti,2021-08-14,1480.04,1542.46,4.22,Low
+Infosys,IT,2022 European heatwaves,heatwave,Europe,2022-06-12,1366.9,1258.58,-7.92,High
+Infosys,IT,2023 TurkeySyria earthquakes,earthquake,"Turkey, Syria",2023-02-06,1422.56,1475.25,3.7,Low
+L&T,Infrastructure,2004 Indian Ocean earthquake and tsunami,earthquake + tsunami,"Indonesia, Sri Lanka, India, Thailand, Maldives, Somalia",2004-12-26,83.52,84.0,0.57,Low
+L&T,Infrastructure,2005 Kashmir earthquake,earthquake,"India, Pakistan",2005-10-08,131.67,127.78,-2.95,Medium
+L&T,Infrastructure,2006 Yogyakarta earthquake,earthquake,Indonesia,2006-05-26,201.03,200.41,-0.31,Low
+L&T,Infrastructure,Cyclone Sidr,cyclone,"Bangladesh, India",2007-11-11,726.38,771.05,6.15,Low
+L&T,Infrastructure,Cyclone Nargis,cyclone,Myanmar,2008-04-27,514.82,552.31,7.28,Low
+L&T,Infrastructure,2009 Sumatra earthquakes,earthquake,Indonesia,2009-09-30,587.72,590.63,0.5,Low
+L&T,Infrastructure,2010 Haiti earthquake,earthquake,Haiti,2010-01-12,595.31,589.45,-0.98,Low
+L&T,Infrastructure,2011 Thoku earthquake and tsunami,earthquake + tsunami,Japan,2011-03-11,564.43,554.61,-1.74,Low
+L&T,Infrastructure,Typhoon Bopha,cyclone,Philippines,2012-12-04,610.18,614.78,0.75,Low
+L&T,Infrastructure,Typhoon Haiyan,cyclone,"Philippines, Vietnam, China",2013-11-08,540.82,514.21,-4.92,Medium
+L&T,Infrastructure,2014 Badakhshan mudslides,landslide,Afghanistan,2014-05-02,742.69,724.3,-2.48,Medium
+L&T,Infrastructure,April 2015 Nepal earthquake,earthquake,"Nepal, India",2015-04-25,958.68,920.78,-3.95,Medium
+L&T,Infrastructure,Hurricane Maria,cyclone,"Puerto Rico, Dominica",2017-09-19,1077.2,1051.11,-2.42,Medium
+L&T,Infrastructure,2018 Sulawesi earthquake and tsunami,earthquake + tsunami,Indonesia,2018-09-28,1184.53,1119.03,-5.53,High
+L&T,Infrastructure,2021 Haiti earthquake,earthquake,Haiti,2021-08-14,1533.05,1567.02,2.22,Low
+L&T,Infrastructure,2022 European heatwaves,heatwave,Europe,2022-06-12,1525.37,1429.88,-6.26,High
+L&T,Infrastructure,2023 TurkeySyria earthquakes,earthquake,"Turkey, Syria",2023-02-06,2085.42,2103.2,0.85,Low
+Maruti,Automobile,2004 Indian Ocean earthquake and tsunami,earthquake + tsunami,"Indonesia, Sri Lanka, India, Thailand, Maldives, Somalia",2004-12-26,396.17,397.8,0.41,Low
+Maruti,Automobile,2005 Kashmir earthquake,earthquake,"India, Pakistan",2005-10-08,500.1,482.46,-3.53,Medium
+Maruti,Automobile,2006 Yogyakarta earthquake,earthquake,Indonesia,2006-05-26,647.49,635.72,-1.82,Low
+Maruti,Automobile,Cyclone Sidr,cyclone,"Bangladesh, India",2007-11-11,849.22,914.71,7.71,Low
+Maruti,Automobile,Cyclone Nargis,cyclone,Myanmar,2008-04-27,662.12,688.38,3.97,Low
+Maruti,Automobile,2009 Sumatra earthquakes,earthquake,Indonesia,2009-09-30,1445.75,1409.69,-2.49,Medium
+Maruti,Automobile,2010 Haiti earthquake,earthquake,Haiti,2010-01-12,1282.8,1247.63,-2.74,Medium
+Maruti,Automobile,2011 Thoku earthquake and tsunami,earthquake + tsunami,Japan,2011-03-11,1118.32,1081.42,-3.3,Medium
+Maruti,Automobile,Typhoon Bopha,cyclone,Philippines,2012-12-04,1337.84,1356.58,1.4,Low
+Maruti,Automobile,Typhoon Haiyan,cyclone,"Philippines, Vietnam, China",2013-11-08,1466.87,1427.34,-2.69,Medium
+Maruti,Automobile,2014 Badakhshan mudslides,landslide,Afghanistan,2014-05-02,1762.55,1700.02,-3.55,Medium
+Maruti,Automobile,April 2015 Nepal earthquake,earthquake,"Nepal, India",2015-04-25,3274.63,3381.55,3.27,Low
+Maruti,Automobile,Hurricane Maria,cyclone,"Puerto Rico, Dominica",2017-09-19,7493.82,7491.91,-0.03,Low
+Maruti,Automobile,2018 Sulawesi earthquake and tsunami,earthquake + tsunami,Indonesia,2018-09-28,7300.73,6788.24,-7.02,High
+Maruti,Automobile,2021 Haiti earthquake,earthquake,Haiti,2021-08-14,6830.69,6597.61,-3.41,Medium
+Maruti,Automobile,2022 European heatwaves,heatwave,Europe,2022-06-12,7532.55,7415.59,-1.55,Low
+Maruti,Automobile,2023 TurkeySyria earthquakes,earthquake,"Turkey, Syria",2023-02-06,8513.67,8554.93,0.48,Low
+ONGC,Oil & Gas,2001 Gujarat earthquake,earthquake,India,2001-01-26,4.76,4.72,-0.84,Low
+ONGC,Oil & Gas,2002 Hindu Kush earthquakes,earthquake,Afghanistan,2002-03-25,9.56,10.59,10.77,Low
+ONGC,Oil & Gas,2004 Indian Ocean earthquake and tsunami,earthquake + tsunami,"Indonesia, Sri Lanka, India, Thailand, Maldives, Somalia",2004-12-26,37.55,37.12,-1.15,Low
+ONGC,Oil & Gas,2005 Kashmir earthquake,earthquake,"India, Pakistan",2005-10-08,49.56,47.67,-3.81,Medium
+ONGC,Oil & Gas,2006 Yogyakarta earthquake,earthquake,Indonesia,2006-05-26,56.99,52.7,-7.53,High
+ONGC,Oil & Gas,Cyclone Sidr,cyclone,"Bangladesh, India",2007-11-11,97.28,92.92,-4.48,Medium
+ONGC,Oil & Gas,Cyclone Nargis,cyclone,Myanmar,2008-04-27,79.64,78.74,-1.13,Low
+ONGC,Oil & Gas,2009 Sumatra earthquakes,earthquake,Indonesia,2009-09-30,92.18,93.17,1.07,Low
+ONGC,Oil & Gas,2010 Haiti earthquake,earthquake,Haiti,2010-01-12,99.07,97.86,-1.22,Low
+ONGC,Oil & Gas,2011 Thoku earthquake and tsunami,earthquake + tsunami,Japan,2011-03-11,88.45,91.12,3.02,Low
+ONGC,Oil & Gas,Typhoon Bopha,cyclone,Philippines,2012-12-04,88.51,93.39,5.51,Low
+ONGC,Oil & Gas,Typhoon Haiyan,cyclone,"Philippines, Vietnam, China",2013-11-08,102.47,97.06,-5.28,High
+ONGC,Oil & Gas,2014 Badakhshan mudslides,landslide,Afghanistan,2014-05-02,119.5,124.64,4.3,Low
+ONGC,Oil & Gas,April 2015 Nepal earthquake,earthquake,"Nepal, India",2015-04-25,123.08,116.27,-5.53,High
+ONGC,Oil & Gas,Hurricane Maria,cyclone,"Puerto Rico, Dominica",2017-09-19,97.59,101.2,3.7,Low
+ONGC,Oil & Gas,2018 Sulawesi earthquake and tsunami,earthquake + tsunami,Indonesia,2018-09-28,115.23,115.77,0.47,Low
+ONGC,Oil & Gas,2021 Haiti earthquake,earthquake,Haiti,2021-08-14,84.17,82.85,-1.57,Low
+ONGC,Oil & Gas,2022 European heatwaves,heatwave,Europe,2022-06-12,126.08,110.19,-12.6,High
+ONGC,Oil & Gas,2023 TurkeySyria earthquakes,earthquake,"Turkey, Syria",2023-02-06,120.8,122.85,1.7,Low
+Reliance,Oil & Gas,2001 Gujarat earthquake,earthquake,India,2001-01-26,20.17,20.71,2.68,Low
+Reliance,Oil & Gas,2002 Hindu Kush earthquakes,earthquake,Afghanistan,2002-03-25,16.7,16.51,-1.14,Low
+Reliance,Oil & Gas,2004 Indian Ocean earthquake and tsunami,earthquake + tsunami,"Indonesia, Sri Lanka, India, Thailand, Maldives, Somalia",2004-12-26,29.1,32.02,10.03,Low
+Reliance,Oil & Gas,2005 Kashmir earthquake,earthquake,"India, Pakistan",2005-10-08,48.83,47.66,-2.4,Medium
+Reliance,Oil & Gas,2006 Yogyakarta earthquake,earthquake,Indonesia,2006-05-26,91.45,93.89,2.67,Low
+Reliance,Oil & Gas,Cyclone Sidr,cyclone,"Bangladesh, India",2007-11-11,267.78,289.42,8.08,Low
+Reliance,Oil & Gas,Cyclone Nargis,cyclone,Myanmar,2008-04-27,261.87,268.64,2.59,Low
+Reliance,Oil & Gas,2009 Sumatra earthquakes,earthquake,Indonesia,2009-09-30,215.56,215.97,0.19,Low
+Reliance,Oil & Gas,2010 Haiti earthquake,earthquake,Haiti,2010-01-12,224.8,225.76,0.43,Low
+Reliance,Oil & Gas,2011 Thoku earthquake and tsunami,earthquake + tsunami,Japan,2011-03-11,200.05,214.4,7.17,Low
+Reliance,Oil & Gas,Typhoon Bopha,cyclone,Philippines,2012-12-04,167.14,174.74,4.55,Low
+Reliance,Oil & Gas,Typhoon Haiyan,cyclone,"Philippines, Vietnam, China",2013-11-08,192.76,178.93,-7.17,High
+Reliance,Oil & Gas,2014 Badakhshan mudslides,landslide,Afghanistan,2014-05-02,200.24,203.6,1.68,Low
+Reliance,Oil & Gas,April 2015 Nepal earthquake,earthquake,"Nepal, India",2015-04-25,189.52,184.53,-2.63,Medium
+Reliance,Oil & Gas,Hurricane Maria,cyclone,"Puerto Rico, Dominica",2017-09-19,372.75,361.07,-3.13,Medium
+Reliance,Oil & Gas,2018 Sulawesi earthquake and tsunami,earthquake + tsunami,Indonesia,2018-09-28,547.87,535.89,-2.19,Medium
+Reliance,Oil & Gas,2021 Haiti earthquake,earthquake,Haiti,2021-08-14,945.13,988.58,4.6,Low
+Reliance,Oil & Gas,2022 European heatwaves,heatwave,Europe,2022-06-12,1261.63,1178.48,-6.59,High
+Reliance,Oil & Gas,2023 TurkeySyria earthquakes,earthquake,"Turkey, Syria",2023-02-06,1068.16,1066.67,-0.14,Low
+SBI,Banking,2001 Gujarat earthquake,earthquake,India,2001-01-26,14.35,15.04,4.81,Low
+SBI,Banking,2002 Hindu Kush earthquakes,earthquake,Afghanistan,2002-03-25,15.46,14.69,-4.98,Medium
+SBI,Banking,2004 Indian Ocean earthquake and tsunami,earthquake + tsunami,"Indonesia, Sri Lanka, India, Thailand, Maldives, Somalia",2004-12-26,43.37,46.84,8.0,Low
+SBI,Banking,2005 Kashmir earthquake,earthquake,"India, Pakistan",2005-10-08,69.19,67.58,-2.33,Medium
+SBI,Banking,2006 Yogyakarta earthquake,earthquake,Indonesia,2006-05-26,62.93,60.94,-3.16,Medium
+SBI,Banking,Cyclone Sidr,cyclone,"Bangladesh, India",2007-11-11,167.18,175.37,4.9,Low
+SBI,Banking,Cyclone Nargis,cyclone,Myanmar,2008-04-27,138.35,145.53,5.19,Low
+SBI,Banking,2009 Sumatra earthquakes,earthquake,Indonesia,2009-09-30,176.12,175.68,-0.25,Low
+SBI,Banking,2010 Haiti earthquake,earthquake,Haiti,2010-01-12,188.84,176.52,-6.52,High
+SBI,Banking,2011 Thoku earthquake and tsunami,earthquake + tsunami,Japan,2011-03-11,219.16,220.81,0.75,Low
+SBI,Banking,Typhoon Bopha,cyclone,Philippines,2012-12-04,183.66,199.54,8.65,Low
+SBI,Banking,Typhoon Haiyan,cyclone,"Philippines, Vietnam, China",2013-11-08,164.78,149.06,-9.54,High
+SBI,Banking,2014 Badakhshan mudslides,landslide,Afghanistan,2014-05-02,186.66,183.96,-1.45,Low
+SBI,Banking,April 2015 Nepal earthquake,earthquake,"Nepal, India",2015-04-25,256.39,240.44,-6.22,High
+SBI,Banking,Hurricane Maria,cyclone,"Puerto Rico, Dominica",2017-09-19,253.01,241.61,-4.51,Medium
+SBI,Banking,2018 Sulawesi earthquake and tsunami,earthquake + tsunami,Indonesia,2018-09-28,243.92,250.7,2.78,Low
+SBI,Banking,2021 Haiti earthquake,earthquake,Haiti,2021-08-14,403.6,390.84,-3.16,Medium
+SBI,Banking,2022 European heatwaves,heatwave,Europe,2022-06-12,438.27,417.08,-4.83,Medium
+SBI,Banking,2023 TurkeySyria earthquakes,earthquake,"Turkey, Syria",2023-02-06,498.75,523.06,4.87,Low
+Sun Pharma,Pharma,2001 Gujarat earthquake,earthquake,India,2001-01-26,11.29,11.62,2.92,Low
+Sun Pharma,Pharma,2002 Hindu Kush earthquakes,earthquake,Afghanistan,2002-03-25,12.86,12.92,0.47,Low
+Sun Pharma,Pharma,2004 Indian Ocean earthquake and tsunami,earthquake + tsunami,"Indonesia, Sri Lanka, India, Thailand, Maldives, Somalia",2004-12-26,43.75,44.26,1.17,Low
+Sun Pharma,Pharma,2005 Kashmir earthquake,earthquake,"India, Pakistan",2005-10-08,52.59,52.91,0.61,Low
+Sun Pharma,Pharma,2006 Yogyakarta earthquake,earthquake,Indonesia,2006-05-26,64.62,64.56,-0.09,Low
+Sun Pharma,Pharma,Cyclone Sidr,cyclone,"Bangladesh, India",2007-11-11,92.22,96.68,4.84,Low
+Sun Pharma,Pharma,Cyclone Nargis,cyclone,Myanmar,2008-04-27,119.75,125.59,4.88,Low
+Sun Pharma,Pharma,2009 Sumatra earthquakes,earthquake,Indonesia,2009-09-30,116.55,127.75,9.61,Low
+Sun Pharma,Pharma,2010 Haiti earthquake,earthquake,Haiti,2010-01-12,137.98,135.86,-1.54,Low
+Sun Pharma,Pharma,2011 Thoku earthquake and tsunami,earthquake + tsunami,Japan,2011-03-11,187.03,197.58,5.64,Low
+Sun Pharma,Pharma,Typhoon Bopha,cyclone,Philippines,2012-12-04,323.03,318.46,-1.41,Low
+Sun Pharma,Pharma,Typhoon Haiyan,cyclone,"Philippines, Vietnam, China",2013-11-08,541.05,555.9,2.74,Low
+Sun Pharma,Pharma,2014 Badakhshan mudslides,landslide,Afghanistan,2014-05-02,582.0,576.61,-0.93,Low
+Sun Pharma,Pharma,April 2015 Nepal earthquake,earthquake,"Nepal, India",2015-04-25,955.87,859.76,-10.05,High
+Sun Pharma,Pharma,Hurricane Maria,cyclone,"Puerto Rico, Dominica",2017-09-19,482.68,475.92,-1.4,Low
+Sun Pharma,Pharma,2018 Sulawesi earthquake and tsunami,earthquake + tsunami,Indonesia,2018-09-28,579.68,576.75,-0.51,Low
+Sun Pharma,Pharma,2021 Haiti earthquake,earthquake,Haiti,2021-08-14,750.78,745.16,-0.75,Low
+Sun Pharma,Pharma,2022 European heatwaves,heatwave,Europe,2022-06-12,815.88,763.12,-6.47,High
+Sun Pharma,Pharma,2023 TurkeySyria earthquakes,earthquake,"Turkey, Syria",2023-02-06,979.37,978.66,-0.07,Low
+TCS,IT,2004 Indian Ocean earthquake and tsunami,earthquake + tsunami,"Indonesia, Sri Lanka, India, Thailand, Maldives, Somalia",2004-12-26,103.77,108.89,4.93,Low
+TCS,IT,2005 Kashmir earthquake,earthquake,"India, Pakistan",2005-10-08,123.21,118.56,-3.77,Medium
+TCS,IT,2006 Yogyakarta earthquake,earthquake,Indonesia,2006-05-26,147.04,147.24,0.14,Low
+TCS,IT,Cyclone Sidr,cyclone,"Bangladesh, India",2007-11-11,168.91,165.31,-2.13,Medium
+TCS,IT,Cyclone Nargis,cyclone,Myanmar,2008-04-27,149.78,159.32,6.37,Low
+TCS,IT,2009 Sumatra earthquakes,earthquake,Indonesia,2009-09-30,204.71,214.44,4.75,Low
+TCS,IT,2010 Haiti earthquake,earthquake,Haiti,2010-01-12,249.75,276.67,10.78,Low
+TCS,IT,2011 Thoku earthquake and tsunami,earthquake + tsunami,Japan,2011-03-11,397.91,400.28,0.6,Low
+TCS,IT,Typhoon Bopha,cyclone,Philippines,2012-12-04,481.51,468.92,-2.61,Medium
+TCS,IT,Typhoon Haiyan,cyclone,"Philippines, Vietnam, China",2013-11-08,769.23,771.86,0.34,Low
+TCS,IT,2014 Badakhshan mudslides,landslide,Afghanistan,2014-05-02,826.96,817.22,-1.18,Low
+TCS,IT,April 2015 Nepal earthquake,earthquake,"Nepal, India",2015-04-25,945.41,959.0,1.44,Low
+TCS,IT,Hurricane Maria,cyclone,"Puerto Rico, Dominica",2017-09-19,1016.01,1022.82,0.67,Low
+TCS,IT,2018 Sulawesi earthquake and tsunami,earthquake + tsunami,Indonesia,2018-09-28,1824.15,1794.62,-1.62,Low
+TCS,IT,2021 Haiti earthquake,earthquake,Haiti,2021-08-14,2941.6,3152.17,7.16,Low
+TCS,IT,2022 European heatwaves,heatwave,Europe,2022-06-12,3008.1,2763.17,-8.14,High
+TCS,IT,2023 TurkeySyria earthquakes,earthquake,"Turkey, Syria",2023-02-06,3134.56,3253.38,3.79,Low
+Vodafone Idea,Telecom,Cyclone Sidr,cyclone,"Bangladesh, India",2007-11-11,77.2,75.39,-2.34,Medium
+Vodafone Idea,Telecom,Cyclone Nargis,cyclone,Myanmar,2008-04-27,64.62,64.5,-0.19,Low
+Vodafone Idea,Telecom,2009 Sumatra earthquakes,earthquake,Indonesia,2009-09-30,45.09,41.82,-7.25,High
+Vodafone Idea,Telecom,2010 Haiti earthquake,earthquake,Haiti,2010-01-12,36.24,35.2,-2.87,Medium
+Vodafone Idea,Telecom,2011 Thoku earthquake and tsunami,earthquake + tsunami,Japan,2011-03-11,35.53,35.68,0.42,Low
+Vodafone Idea,Telecom,Typhoon Bopha,cyclone,Philippines,2012-12-04,59.01,57.61,-2.37,Medium
+Vodafone Idea,Telecom,Typhoon Haiyan,cyclone,"Philippines, Vietnam, China",2013-11-08,98.11,98.2,0.09,Low
+Vodafone Idea,Telecom,2014 Badakhshan mudslides,landslide,Afghanistan,2014-05-02,83.63,77.47,-7.37,High
+Vodafone Idea,Telecom,April 2015 Nepal earthquake,earthquake,"Nepal, India",2015-04-25,114.24,104.34,-8.67,High
+Vodafone Idea,Telecom,Hurricane Maria,cyclone,"Puerto Rico, Dominica",2017-09-19,49.26,47.15,-4.28,Medium
+Vodafone Idea,Telecom,2018 Sulawesi earthquake and tsunami,earthquake + tsunami,Indonesia,2018-09-28,25.42,22.13,-12.94,High
+Vodafone Idea,Telecom,2021 Haiti earthquake,earthquake,Haiti,2021-08-14,6.9,6.45,-6.52,High
+Vodafone Idea,Telecom,2022 European heatwaves,heatwave,Europe,2022-06-12,9.2,8.2,-10.87,High
+Vodafone Idea,Telecom,2023 TurkeySyria earthquakes,earthquake,"Turkey, Syria",2023-02-06,6.7,7.85,17.16,Low
+Wipro,IT,2001 Gujarat earthquake,earthquake,India,2001-01-26,41.27,39.93,-3.25,Medium
+Wipro,IT,2002 Hindu Kush earthquakes,earthquake,Afghanistan,2002-03-25,24.36,24.34,-0.08,Low
+Wipro,IT,2004 Indian Ocean earthquake and tsunami,earthquake + tsunami,"Indonesia, Sri Lanka, India, Thailand, Maldives, Somalia",2004-12-26,33.79,32.8,-2.93,Medium
+Wipro,IT,2005 Kashmir earthquake,earthquake,"India, Pakistan",2005-10-08,33.52,34.34,2.45,Low
+Wipro,IT,2006 Yogyakarta earthquake,earthquake,Indonesia,2006-05-26,38.97,39.67,1.8,Low
+Wipro,IT,Cyclone Sidr,cyclone,"Bangladesh, India",2007-11-11,44.03,41.67,-5.36,High
+Wipro,IT,Cyclone Nargis,cyclone,Myanmar,2008-04-27,38.99,45.42,16.49,Low
+Wipro,IT,2009 Sumatra earthquakes,earthquake,Indonesia,2009-09-30,52.19,56.08,7.45,Low
+Wipro,IT,2010 Haiti earthquake,earthquake,Haiti,2010-01-12,62.5,67.81,8.5,Low
+Wipro,IT,2011 Thoku earthquake and tsunami,earthquake + tsunami,Japan,2011-03-11,69.62,69.33,-0.42,Low
+Wipro,IT,Typhoon Bopha,cyclone,Philippines,2012-12-04,61.63,60.65,-1.59,Low
+Wipro,IT,Typhoon Haiyan,cyclone,"Philippines, Vietnam, China",2013-11-08,78.09,78.45,0.46,Low
+Wipro,IT,2014 Badakhshan mudslides,landslide,Afghanistan,2014-05-02,86.59,82.75,-4.43,Medium
+Wipro,IT,April 2015 Nepal earthquake,earthquake,"Nepal, India",2015-04-25,95.76,89.64,-6.39,High
+Wipro,IT,Hurricane Maria,cyclone,"Puerto Rico, Dominica",2017-09-19,97.0,100.76,3.88,Low
+Wipro,IT,2018 Sulawesi earthquake and tsunami,earthquake + tsunami,Indonesia,2018-09-28,114.22,112.44,-1.56,Low
+Wipro,IT,2021 Haiti earthquake,earthquake,Haiti,2021-08-14,275.69,290.75,5.46,Low
+Wipro,IT,2022 European heatwaves,heatwave,Europe,2022-06-12,218.18,189.05,-13.35,High
+Wipro,IT,2023 TurkeySyria earthquakes,earthquake,"Turkey, Syria",2023-02-06,188.2,189.79,0.84,Low

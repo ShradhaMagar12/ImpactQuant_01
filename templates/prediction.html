@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-section">
+  <div class="section-head">
+    <div class="eyebrow">Future Prediction</div>
+    <h1 class="section-title">Scenario-Based Disaster Forecasting</h1>
+    <p class="section-sub">Use the trained model to simulate a future disaster scenario, measure confidence, and compare the forecast against the current filtered market context.</p>
+  </div>
+
+  <div class="plot-grid two">
+    <div class="plot-card">
+      <div class="card-head"><h3>Prediction Console</h3><span>Input</span></div>
+      <div class="scenario-grid">
+        <div class="ip-field"><div class="ip-label">Company</div><select id="pred-company" class="ip-sel"></select></div>
+        <div class="ip-field"><div class="ip-label">Sector</div><select id="pred-sector" class="ip-sel"></select></div>
+        <div class="ip-field"><div class="ip-label">Event Type</div><select id="pred-type" class="ip-sel"></select></div>
+        <div class="ip-field"><div class="ip-label">Location</div><select id="pred-location" class="ip-sel"></select></div>
+        <div class="ip-field"><div class="ip-label">Year</div><input id="pred-year" class="ip-txt" type="number" min="2000" max="2035" step="1"></div>
+        <div class="ip-field"><div class="ip-label">Before Price</div><input id="pred-price" class="ip-txt" type="number" min="1" step="0.01" value="500"></div>
+      </div>
+      <button class="btn-primary full-width" id="run-predict-btn">Run Future Prediction</button>
+    </div>
+
+    <div class="plot-card">
+      <div class="card-head"><h3>Prediction Output</h3><span>Result</span></div>
+      <div class="kpi-grid compact">
+        <div class="kpi-card"><span class="kpi-label">Impact</span><span class="kpi-value" id="pred-impact">-</span></div>
+        <div class="kpi-card"><span class="kpi-label">Change (%)</span><span class="kpi-value" id="pred-change">-</span></div>
+        <div class="kpi-card"><span class="kpi-label">After Price</span><span class="kpi-value" id="pred-after">-</span></div>
+        <div class="kpi-card"><span class="kpi-label">Recovery Days</span><span class="kpi-value" id="pred-recovery">-</span></div>
+      </div>
+      <div class="message-box" id="prediction-message">Run a scenario to generate a future prediction.</div>
+      <div id="prediction-probabilities" class="plot-box small"></div>
+    </div>
+  </div>
+
+  <div class="plot-grid two">
+    <div class="plot-card"><div class="card-head"><h3>Current Sector Context</h3><span>Comparison</span></div><div id="prediction-context-sector" class="plot-box"></div></div>
+    <div class="insight-card">
+      <div class="card-head"><h3>Context Insights</h3><span id="prediction-insight-count">0</span></div>
+      <div id="prediction-insights" class="stack-list"></div>
+    </div>
+  </div>
+
+  <div class="plot-grid two">
+    <div class="plot-card">
+      <div class="card-head"><h3>Historical Baseline Sample</h3><span>Reference</span></div>
+      <div class="table-wrap">
+        <table class="data-table" id="prediction-history-table">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="insight-card">
+      <div class="card-head"><h3>Decision Support</h3><span>Guidance</span></div>
+      <div id="prediction-guidance" class="stack-list"></div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/prediction.js') }}"></script>
+{% endblock %}

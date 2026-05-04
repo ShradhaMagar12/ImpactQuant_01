@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-section">
+  <div class="section-head">
+    <div class="eyebrow">EDA</div>
+    <h1 class="section-title">Exploratory Data Analysis</h1>
+    <p class="section-sub">This page follows the original EDA intent: dataset overview, univariate analysis, bivariate analysis, multivariate analysis, outlier detection, and hypothesis testing.</p>
+  </div>
+
+  <div class="kpi-grid compact">
+    <div class="kpi-card"><span class="kpi-label">Filtered Records</span><span class="kpi-value" id="eda-records">0</span></div>
+    <div class="kpi-card"><span class="kpi-label">Companies</span><span class="kpi-value" id="eda-companies">0</span></div>
+    <div class="kpi-card"><span class="kpi-label">Disasters</span><span class="kpi-value" id="eda-disasters">0</span></div>
+    <div class="kpi-card"><span class="kpi-label">Avg Change</span><span class="kpi-value" id="eda-change">0.00%</span></div>
+  </div>
+
+  <div class="subsection-head">
+    <h2>Dataset Overview</h2>
+    <p>Start with the dataset preview and descriptive statistics before moving into deeper analysis.</p>
+  </div>
+  <div class="plot-grid two">
+    <div class="plot-card">
+      <div class="card-head"><h3>Descriptive Statistics</h3><span>Overview</span></div>
+      <div class="table-wrap">
+        <table class="data-table" id="eda-stats-table">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="plot-card">
+      <div class="card-head"><h3>Dataset Sample</h3><span>Preview</span></div>
+      <div class="table-wrap">
+        <table class="data-table" id="eda-sample-table">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="subsection-head">
+    <h2>Univariate Analysis</h2>
+    <p>Examine the distribution of stock-price change and the balance of impact classes in the filtered data.</p>
+  </div>
+  <div class="plot-grid two">
+    <div class="plot-card"><div class="card-head"><h3>Change Distribution</h3><span>Histogram</span></div><div id="eda-histogram" class="plot-box"></div></div>
+    <div class="plot-card"><div class="card-head"><h3>Impact Class Split</h3><span>Donut</span></div><div id="eda-impact-pie" class="plot-box"></div></div>
+  </div>
+  <div class="plot-grid two">
+    <div class="plot-card"><div class="card-head"><h3>Volatility Distribution</h3><span>Box Plot</span></div><div id="eda-box-plot" class="plot-box"></div></div>
+    <div class="insight-card">
+      <div class="card-head"><h3>Normality Check</h3><span>Shapiro-Wilk</span></div>
+      <div id="eda-normality" class="stack-list"></div>
+    </div>
+  </div>
+
+  <div class="subsection-head">
+    <h2>Bivariate Analysis</h2>
+    <p>Compare how change percentage shifts across sectors and disaster types.</p>
+  </div>
+  <div class="plot-grid two">
+    <div class="plot-card"><div class="card-head"><h3>Average Change by Sector</h3><span>Bar</span></div><div id="eda-sector-bar" class="plot-box"></div></div>
+    <div class="plot-card"><div class="card-head"><h3>Average Change by Disaster Type</h3><span>Bar</span></div><div id="eda-type-bar" class="plot-box"></div></div>
+  </div>
+
+  <div class="subsection-head">
+    <h2>Multivariate Analysis</h2>
+    <p>Study how multiple variables interact through sector-positioning, encoded correlation, and year-vs-type behavior.</p>
+  </div>
+  <div class="plot-grid two">
+    <div class="plot-card"><div class="card-head"><h3>Correlation Heatmap</h3><span>Encoded</span></div><div id="eda-correlation" class="plot-box"></div></div>
+    <div class="plot-card"><div class="card-head"><h3>Year vs Type Heatmap</h3><span>Heatmap</span></div><div id="eda-year-heatmap" class="plot-box"></div></div>
+  </div>
+  <div class="plot-grid two">
+    <div class="plot-card"><div class="card-head"><h3>Sector Risk Matrix</h3><span>Bubble</span></div><div id="eda-sector-bubble" class="plot-box"></div></div>
+    <div class="plot-card"><div class="card-head"><h3>Multivariate Relationship</h3><span>Scatter</span></div><div id="eda-multivariate" class="plot-box"></div></div>
+  </div>
+
+  <div class="subsection-head">
+    <h2>Outliers and Event Extremes</h2>
+    <p>Flag unusual changes and compare before-versus-after pricing behavior across events.</p>
+  </div>
+  <div class="plot-grid two">
+    <div class="plot-card"><div class="card-head"><h3>Outlier Detection</h3><span>Z-Score</span></div><div id="eda-outliers" class="plot-box"></div></div>
+    <div class="plot-card"><div class="card-head"><h3>Before vs After Price</h3><span>Scatter</span></div><div id="eda-price-scatter" class="plot-box"></div></div>
+  </div>
+
+  <div class="subsection-head">
+    <h2>Hypothesis Testing</h2>
+    <p>Test whether high-impact disasters behave differently from the rest of the dataset using an independent two-sample t-test.</p>
+  </div>
+  <div class="plot-grid two">
+    <div class="insight-card">
+      <div class="card-head"><h3>T-Test Summary</h3><span>Decision</span></div>
+      <div id="eda-hypothesis" class="stack-list"></div>
+    </div>
+    <div class="plot-card"><div class="card-head"><h3>Average Change Comparison</h3><span>T-Test</span></div><div id="eda-hypothesis-chart" class="plot-box"></div></div>
+  </div>
+
+  <div class="plot-card">
+    <div class="card-head"><h3>Sector Summary</h3><span>Table</span></div>
+    <div class="table-wrap">
+      <table class="data-table" id="eda-sector-table">
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/eda.js') }}"></script>
+{% endblock %}
