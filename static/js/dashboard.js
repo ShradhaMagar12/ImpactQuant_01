@@ -19,7 +19,6 @@ window.addEventListener("load", async () => {
     ImpactQuant.renderPlot("dashboard-bar", analysisPayload.figures.bar);
     ImpactQuant.renderPlot("dashboard-sector", analysisPayload.figures.sector);
     ImpactQuant.renderPlot("dashboard-frequency", analysisPayload.figures.frequency);
-    ImpactQuant.renderPlot("dashboard-location", analysisPayload.figures.location);
 
     const summaryCards = [
       {
@@ -45,9 +44,7 @@ window.addEventListener("load", async () => {
       .join("");
 
     ImpactQuant.renderTable("dashboard-sector-table", analysisPayload.sector_summary.slice(0, 8));
-    ImpactQuant.renderInsights("dashboard-insights", insightsPayload.insights);
     ImpactQuant.renderRipple("dashboard-ripple", insightsPayload.ripple_effects);
-    ImpactQuant.$("dashboard-insight-count").textContent = `${insightsPayload.insights.length}`;
 
     ImpactQuant.renderTable("dashboard-table", dataPayload.rows.slice(0, 12));
     ImpactQuant.$("dashboard-table-count").textContent = `${dataPayload.summary.records} rows`;
